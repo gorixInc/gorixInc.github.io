@@ -152,7 +152,7 @@ All project members contributed equally to the blogpost.
 
 ## Appendix-A
 
-![pilotnet-tune-hyperparameter-dataset-short.svg](assets%2Fpilotnet-tune-hyperparameter-dataset-short.svg)
+![pilotnet-tune-hyperparameter-dataset-short.svg](https://github.com/gorixInc/rally-challenge-24/blob/master/assets/images/pilotnet-tune-hyperparameter-dataset-short.svg)
 
 ## Appendix-B
 
@@ -164,7 +164,7 @@ All project members contributed equally to the blogpost.
 | learning_rate | 0.000712             | 0.001            |
 | weight_decay  | 0.026266             | 0.01             |
 
-![pilotnet-tune-hyperparameter-dataset-full.svg](assets%2Fpilotnet-tune-hyperparameter-dataset-full.svg)
+![pilotnet-tune-hyperparameter-dataset-full.svg](https://github.com/gorixInc/rally-challenge-24/blob/master/assets/images/pilotnet-tune-hyperparameter-dataset-full.svg)
 
 [1]: https://adl.cs.ut.ee/blog/rally-estonia-challenge-2023-results
 [2]: https://arxiv.org/abs/1604.07316
