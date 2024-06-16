@@ -87,7 +87,7 @@ The CNN consists of 2 convolutions with ReLu activation, followed by a max pool 
 
 ### Data Loader
 
-The data loader implementation for both PilotNet and Perceiver was based on the `NvidiaDataset()` class presented in the [e2e-rally-estonia repository][5]. During the loader initialization, the desired transformations and color space can be chosen. For each driven path, a pandas DataFrame is created, which contains the file paths to each frame from the camera and metadata, including steering angle, vehicle speed, turn signal data, etc. The DataFrames for each separate driven path are then concatenated into a single DataFrame, containing image paths and metadata for all frames across all paths. For PilotNet, the data loader extracts a batch of images and corresponding steering angles.
+The data loader implementation for both PilotNet and Perceiver was based on the `NvidiaDataset()` class presented in the [e2e-rally-estonia repository][5]. During the loader initialization, the desired transformations and color space can be chosen. For each driven path, a pandas DataFrame is created, which contains the file paths to each frame from the camera and metadata, including steering angle, vehicle speed, turn signal data, etc. The DataFrames for each separate driven path are then concatenated into a single DataFrame, containing image paths and metadata for all frames across all paths. For PilotNet, the dataloader extracts a batch of images and corresponding steering angles.
 
 
 <!-- The mean absolute error (MAE) was shown (https://www.mdpi.com/1424-8220/23/5/2845) to be a more suitable loss function for this task than mean squared error (MSE). Therefore, MAE was primarily used. The Adam optimizer with weight decay was employed, and to prevent overfitting, early stopping was implemented with a patience of 10 epochs without a decrease in validation loss. -->
@@ -157,7 +157,7 @@ We adapted the Perceiver architecture to work with frames sequences rather. Desp
 
 ### Contributions
 - Maksim Ploter: implementing training infrastructure, wandb set-up and implementation, Pilotnet tuning and evaluation
-- Gordei Pribõtkin: implementing models, implementing RNN dataloader, Perceiver evaluation, VISTA set-up
+- Gordei Pribõtkin: implementing models, implementing RNN dataloader, Perceiver evaluation, VISTA set-up, dataloader optimization
 - Filips Petuhovs: implementing dataloaders, implementing trainers, initial experiments
 - Rain Eichhorn: VISTA set-up, implementing data preprocessing, PilotNet evaluation
 
