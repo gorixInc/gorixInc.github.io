@@ -8,11 +8,6 @@
     max-width: 1200px; /* Adjust this value to your desired width */
 }
 
-div[align="left"] {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Adjust gap between images as needed */
-}
 
 .post img {
         display: flex;
@@ -22,11 +17,16 @@ div[align="left"] {
         margin-right: auto;
 }
 
-div[align="left"] img {
-    width: calc(50% - 10px); /* Adjust this value based on the desired number of images per row */
-    margin: 5px 0; /* Optional: Add some margin for vertical spacing */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between images as needed */
 }
 
+.image-row img {
+    max-width: calc(50% - 10px); /* Adjust width and gap to fit your design */
+    flex: 1 1 auto;
+}
 
 .post figcaption {
   text-align: center;
